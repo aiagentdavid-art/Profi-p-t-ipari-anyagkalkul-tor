@@ -1,4 +1,4 @@
-rom flask import Flask, request, jsonify, send_file, render_template
+from flask import Flask, request, jsonify, send_file, render_template
 from flask_cors import CORS
 from ai_extractor import extract_product_data
 from file_analyzer import analyze_file
