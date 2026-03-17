@@ -9,7 +9,9 @@ import os
 
 app = Flask(__name__)
 CORS(app)
-
+@app.route('/')
+def home():
+    return render_template('index.html')
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
